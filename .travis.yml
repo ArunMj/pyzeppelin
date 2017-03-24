@@ -9,8 +9,8 @@ services:
   - docker
 
 before_install:
-  - docker pull xemuliam/zeppelin
-  - docker run -d -p 8080:8080 -p 8443:8443 xemuliam/zeppelin
+  - docker pull epahomov/docker-zeppelin
+  - docker run -d -p 8080:8080 -p 7077:7077 -p 4040:4040 epahomov/docker-zeppelin
   - docker ps -a
 
 # command to install dependencies
