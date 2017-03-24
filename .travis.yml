@@ -20,7 +20,7 @@ install:
 # command to run tests
 script:
   - sudo netstat -ltpn
-  - bash -c "for i in {0..6}; do sleep 1;curl -i http://localhost:8088|tee ; done"
+  - bash -c "for i in {0..60}; do sleep 1;echo $i; curl -i http://localhost:8088|tee ; done"
   - echo aa | nc  localhost 8088
   - python test.py
 
