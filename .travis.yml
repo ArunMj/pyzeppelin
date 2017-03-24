@@ -15,11 +15,12 @@ before_install:
 
 # command to install dependencies
 install:
-  - pip install tox
+  - pip install requests
 
 # command to run tests
 script:
   - curl -i http://localhost:8080
+  - python test.py
 
 # tasks to execute after successful test
 after_success:
