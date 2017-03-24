@@ -20,6 +20,7 @@ install:
 # command to run tests
 script:
   - sleep 10
+  - netstat -ltpn
   - curl -i http://localhost:8080
   - python test.py
 
