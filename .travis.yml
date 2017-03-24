@@ -10,7 +10,7 @@ services:
 
 before_install:
   - docker pull xemuliam/zeppelin
-  - docker run -d -p 0.0.0.0:8088:8080  xemuliam/zeppelin
+  - docker run -d -p 8088:8080  xemuliam/zeppelin
   - docker ps -a
 
 # command to install dependencies
@@ -19,7 +19,7 @@ install:
 
 # command to run tests
 script:
-  - sleep 60
+  - sleep 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110
   - sudo netstat -ltpn
   - echo aa | nc  localhost 8088
   - curl -i http://localhost:8088
